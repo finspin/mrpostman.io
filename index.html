@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mr. Postman - Get top 10 links straight to your inboxx</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+        <a href="/" class="navbar-brand">
+            <img src="postman-logo.svg" alt="Mr. Postman logo">
+    </a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-10 offset-1">
+            <h1 class="text-center mb-5">Get top 10 links straight to your inbox</h1>
+            <form action="https://formspree.io/finreg@gmail.com" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-5 offset-md-1">
+                        <label for="reddit">Indie Hackers</label>
+                    </div>
+                    <div class="form-group col-md-5 radio-group">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" value="weekly" id="ihRadio0" name="ihRadio" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label" for="ihRadio0">none</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" value="daily" id="ihRadio1" name="ihRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="ihRadio1">daily</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" value="weekly" id="ihRadio2" name="ihRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="ihRadio2">weekly</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-5 offset-md-1">
+                        <label for="reddit">Hacker News</label>
+                    </div>
+                    <div class="form-group col-md-5 radio-group">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" value="none" id="hnRadio0" name="hnRadio" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label" for="hnRadio0">none</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" value="daily" id="hnRadio1" name="hnRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="hnRadio1">daily</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" value="weekly" id="hnRadio2" name="hnRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="hnRadio2">weekly</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-5 offset-md-1">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">reddit.com/r/</div>
+                            </div>
+                            <input class="form-control" id="reddit" name="reddit" type="text" placeholder="subreddit, e.g. videos"/>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-5 radio-group radio-group-reddit">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" value="none" id="redditRadio0" name="redditRadio" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label" for="redditRadio0">none</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" value="daily" id="redditRadio1" name="redditRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="redditRadio1">daily</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" value="weekly" id="redditRadio2" name="redditRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="redditRadio2">weekly</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row mt-4">
+                    <div class="col-md-4 offset-md-3">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your email">
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary" type="submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+                <p class="text-center text-muted">
+                    <small><i class="fas fa-lock"></i> No catch, no spam, promise. Created by <a href="https://twitter.com/jarospisak">@jarospisak</a>.</small>
+                </p>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
