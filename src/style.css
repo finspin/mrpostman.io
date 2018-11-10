@@ -1,0 +1,97 @@
+body {
+    background-color: #017bff;
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 768px) {
+    input[type="email"] {
+        margin-bottom: 10px;
+    }
+}
+
+h1 {
+    font-size: 19px;
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    font-size: 33px;
+}
+
+h3, h3 a {
+    font-size: 14px;
+    font-weight: 100;
+    color: #e0f3ff;
+    line-height: 21px;
+}
+
+h3 a:hover {
+    color: #9bc4ff;
+}
+
+h3 a {
+    text-decoration: underline;
+}
+
+h4 {
+    color: #fff;
+    font-size: 23px;
+}
+
+.radio-group {
+    padding-left: 30px !important;
+    padding-top: 7px !important;
+}
+
+.radio-group-reddit {
+    padding-top: 10px;
+}
+
+
+/********** FORM **********/
+
+form {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    background-color: #f4f4f4;
+    border-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #D74B00;
+    border-color: #D74B00;
+}
+
+.btn-primary:hover {
+    background-color: #ffa50d;
+    border-color: #ffa50d;
+}
+
+.form-group.reddit-form-group {
+    margin-bottom: 0;
+}
+
+/********** NAVBAR **********/
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    font-weight: 100;
+}
